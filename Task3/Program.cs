@@ -6,9 +6,11 @@ namespace Task3
     {
         public static void Main(string[] args)
         {
-            int pictureCount = 52;
+            int picturesCount = 52;
             int rowCount = 3;
-            Console.WriteLine($"Количество заполненных рядов = {pictureCount / rowCount}, количество картинок сверх меры: {pictureCount % rowCount}");
+            int filledRows = picturesCount / rowCount;
+            int picturesLeft = picturesCount % rowCount;
+            Console.WriteLine($"Количество заполненных рядов = {filledRows}, количество картинок сверх меры: {picturesLeft}");
         }
     }
 }

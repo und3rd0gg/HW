@@ -9,8 +9,7 @@ namespace Task10
             Random random = new Random();
             int number = random.Next(0, 101);
             int summ = 0;
-            Console.WriteLine(number);
-            
+
             for (; number > 0; number--)
             {
                 

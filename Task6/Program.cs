@@ -6,11 +6,11 @@ namespace Task6
     {
         public static void Main(string[] args)
         {
-            int grandmotherCount;
+            int grandmothersCount;
             Console.Write("Введите количество старушек: ");
-            grandmotherCount = Convert.ToInt32(Console.ReadLine());
+            grandmothersCount = Convert.ToInt32(Console.ReadLine());
             int appointmentTime = 10;
-            int timeToWait = grandmotherCount * appointmentTime;
+            int timeToWait = grandmothersCount * appointmentTime;
             Console.Write("Вы должны отстоять в очереди ");
             int hour = 60;
             if (timeToWait > hour)

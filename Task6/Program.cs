@@ -12,13 +12,15 @@ namespace Task6
             int appointmentTime = 10;
             int timeToWait = grandmothersCount * appointmentTime;
             Console.Write("Вы должны отстоять в очереди ");
-            int hour = 60;
-            if (timeToWait > hour)
+            int minutesInHour = 60;
+            
+            if (timeToWait > minutesInHour)
             {
-                int hoursToWait = timeToWait / hour;
+                int hoursToWait = timeToWait / minutesInHour;
                 Console.Write($"{hoursToWait} часа ");
             }
-            int minutesToWait = timeToWait % hour;
+            
+            int minutesToWait = timeToWait % minutesInHour;
             Console.Write($"{minutesToWait} минут.");
         }
     }

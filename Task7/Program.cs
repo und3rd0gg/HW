@@ -12,6 +12,7 @@ namespace Task7
             int repeatCount;
             Console.Write("Введите количество повторов: ");
             repeatCount = Convert.ToInt32(Console.ReadLine());
+            
             while (repeatCount > 0)
             {
                 Console.WriteLine(message);

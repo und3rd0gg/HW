@@ -18,7 +18,6 @@ namespace Task6
                 int hoursToWait = timeToWait / hour;
                 Console.Write($"{hoursToWait} часа ");
             }
-
             int minutesToWait = timeToWait % hour;
             Console.Write($"{minutesToWait} минут.");
         }

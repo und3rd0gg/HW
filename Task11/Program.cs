@@ -42,37 +42,31 @@ namespace Task11
                 switch (selectedAction)
                 {
                     case 1:
-                        
                         usdBalance -= amountToConvert;
                         eurBalance += amountToConvert * usdEurRate;
                         break;
                     
                     case 2:
-                        
                         usdBalance -= amountToConvert;
                         cnyBalance += amountToConvert * cnyUsdRate;
                         break;
                     
                     case 3:
-
                         eurBalance -= amountToConvert;
                         usdBalance += amountToConvert * eurUsdRate;
                         break;
                     
                     case 4:
-
                         eurBalance -= amountToConvert;
                         cnyBalance += amountToConvert * eurCnyRate;
                         break;
                     
                     case 5:
-
                         cnyBalance -= amountToConvert;
                         usdBalance += amountToConvert * cnyUsdRate;
                         break;
                     
                     case 6:
-
                         cnyBalance -= amountToConvert;
                         eurBalance += amountToConvert * cnyEurRate;
                         break;

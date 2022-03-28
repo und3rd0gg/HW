@@ -7,17 +7,18 @@ namespace Task10
         public static void Main(string[] args)
         {
             Random random = new Random();
-            int number = random.Next(0, 101);
+            int randomStartNumber = 0, randomEndNumber = 101;
+            int number = random.Next(randomStartNumber, randomEndNumber);
             int summ = 0;
 
             for (; number > 0; number--)
             {
-                
-                if (number % 3 == 0 || number % 5 == 0)
+                bool isNumberMultiplesBy3 = number % 3 == 0;
+                bool isNumberMultiplesBy5 = number % 5 == 0;
+                if (isNumberMultiplesBy3 || isNumberMultiplesBy5)
                 {
                     summ += number;
                 }
-                
             }
             
             Console.WriteLine($"Полученная сумма = {summ}");

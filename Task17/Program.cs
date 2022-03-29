@@ -6,9 +6,7 @@ namespace Task17
     {
         public static void Main(string[] args)
         {
-            string stringToCheck = "(()(()(())))";
-            int openBracketsCount = 0;
-            int closingBracketsCount = 0;
+            string stringToCheck = "((()(()))(()))";
             int depth = 0;
             int maxDepth = 0;
 
@@ -17,12 +15,10 @@ namespace Task17
 
                 if (symbol == '(')
                 {
-                    openBracketsCount++;
                     depth++;
                 }
                 else if (symbol == ')')
                 {
-                    closingBracketsCount++;
                     depth--;
                 }
 
@@ -30,9 +26,15 @@ namespace Task17
                 {
                     maxDepth = depth;
                 }
+
+                if (depth < 0)
+                {
+                    Console.WriteLine("Некорректное скобочное выражение");
+                    break;
+                }
             }
 
-            if (openBracketsCount != closingBracketsCount)
+            if (depth > 0)
             {
                 Console.WriteLine("Некорректное скобочное выражение");
             }
@@ -40,6 +42,8 @@ namespace Task17
             {
                 Console.WriteLine($"Корректное скобочное выражение, максимальная глубина вложенности: {maxDepth}");
             }
+            
+
         }
     }
 }

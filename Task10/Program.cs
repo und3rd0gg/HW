@@ -15,6 +15,7 @@ namespace Task10
             {
                 bool isNumberMultiplesBy3 = number % 3 == 0;
                 bool isNumberMultiplesBy5 = number % 5 == 0;
+                
                 if (isNumberMultiplesBy3 || isNumberMultiplesBy5)
                 {
                     summ += number;

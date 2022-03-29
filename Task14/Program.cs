@@ -8,9 +8,10 @@ namespace Task14
         {
             string password = "qwerty";
             string secretMessage = "Секретное сообщение";
+            int attemptsCount = 3;
             Console.Write("Введите пароль: ");
 
-            for (int inputAttempts = 3; inputAttempts > 0; inputAttempts--)
+            for (int inputAttempts = attemptsCount; inputAttempts > 0; inputAttempts--)
             {
                 string userInput = Console.ReadLine();
                 
@@ -21,6 +22,7 @@ namespace Task14
                 else
                 {
                     Console.WriteLine($"Секретное сообщение: {secretMessage}");
+                    break;
                 }
             }
         }

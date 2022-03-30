@@ -16,10 +16,12 @@ namespace Task15
 
             for (int i = numberN; i < searchUpperLimit; i += numberN)
             {
+            
                 if (searchLowerLimit <= i)
                 {
                     foundMultiplesCount++;
                 }
+                
             }
 
             Console.WriteLine($"Число N: {numberN}, Количество трехзначных кратных чисел: {foundMultiplesCount}");

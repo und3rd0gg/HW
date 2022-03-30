@@ -9,7 +9,7 @@ namespace Task15
             Random random = new Random();
             int randomStartValue = 1;
             int randomEndValue = 28;
-            int N = random.Next(randomStartValue, randomEndValue);
+            int numberN = random.Next(randomStartValue, randomEndValue);
             int firstSearchLowerLimit = 100;
             int secondSearchLowerLimit = 0;
             int searchUpperLimit = 999;
@@ -17,15 +17,15 @@ namespace Task15
             
             while (secondSearchLowerLimit < firstSearchLowerLimit)
             {
-                secondSearchLowerLimit += N;
+                secondSearchLowerLimit += numberN;
             }
 
-            for (int i = secondSearchLowerLimit; i <= searchUpperLimit; i += N)
+            for (int i = secondSearchLowerLimit; i <= searchUpperLimit; i += numberN)
             {
                 foundMultiplesCount++;
             }
 
-            Console.WriteLine($"Число N: {N}, Количество трехзначных кратных чисел: {foundMultiplesCount}");
+            Console.WriteLine($"Число N: {numberN}, Количество трехзначных кратных чисел: {foundMultiplesCount}");
         }
     }
 }
